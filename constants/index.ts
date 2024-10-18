@@ -8,13 +8,13 @@ export const sidebarLinks = [
   {
     imgURL: '/icons/upcoming.svg',
     route: '/upcoming',
-    label: 'Upcoming',
+    label: 'Meeting',
   },
-  {
-    imgURL: '/icons/previous.svg',
-    route: '/previous',
-    label: 'Previous',
-  },
+  // {
+  //   imgURL: '/icons/previous.svg',
+  //   route: '/previous',
+  //   label: 'Previous',
+  // },
   {
     imgURL: '/icons/Video.svg',
     route: '/recordings',
@@ -23,7 +23,7 @@ export const sidebarLinks = [
   {
     imgURL: '/icons/add-personal.svg',
     route: '/personal-room',
-    label: 'Personal Room',
+    label: 'Live Stream',
   },
 ];
 

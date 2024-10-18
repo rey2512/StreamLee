@@ -57,7 +57,7 @@ const MeetingTypeList = () => {
         router.push(`/meeting/${call.id}`);
       }
       toast({
-        title: 'Meeting Created',
+        title: 'Calling ...',
       });
     } catch (error) {
       console.error(error);
@@ -74,28 +74,28 @@ const MeetingTypeList = () => {
       <HomeCard
         img="/icons/add-meeting.svg"
         title="New Meeting"
-        description="Start an instant meeting"
+        description="Start an instant Call"
         handleClick={() => setMeetingState('isInstantMeeting')}
       />
       <HomeCard
         img="/icons/join-meeting.svg"
         title="Join Meeting"
         description="via invitation link"
-        className="bg-blue-1"
+        className="bg-black"
         handleClick={() => setMeetingState('isJoiningMeeting')}
       />
       <HomeCard
         img="/icons/schedule.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
-        className="bg-purple-1"
+        className="bg-black"
         handleClick={() => setMeetingState('isScheduleMeeting')}
       />
       <HomeCard
         img="/icons/recordings.svg"
-        title="View Recordings"
+        title="Recordings"
         description="Meeting Recordings"
-        className="bg-yellow-1"
+        className="bg-black"
         handleClick={() => router.push('/recordings')}
       />
 
@@ -154,7 +154,7 @@ const MeetingTypeList = () => {
         onClose={() => setMeetingState(undefined)}
         title="Type the link here"
         className="text-center"
-        buttonText="Join Meeting"
+        buttonText="Join Now"
         handleClick={() => router.push(values.link)}
       >
         <Input
@@ -167,9 +167,9 @@ const MeetingTypeList = () => {
       <MeetingModal
         isOpen={meetingState === 'isInstantMeeting'}
         onClose={() => setMeetingState(undefined)}
-        title="Start an Instant Meeting"
+        title="Start an Instant Call"
         className="text-center"
-        buttonText="Start Meeting"
+        buttonText="Video Call"
         handleClick={createMeeting}
       />
     </section>
