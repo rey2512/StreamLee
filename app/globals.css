@@ -98,6 +98,10 @@
   display: block;
   animation: show 0.7s forwards linear;
 }
+.destructive {
+  @apply bg-red-500 text-white; /* Example using Tailwind's @apply directive */
+}
+
 
 @keyframes show {
   0% {
